@@ -1,0 +1,12 @@
+package sub1;
+
+public class Speaker {
+
+	public void soudnUp() {
+		System.out.println("Speaker soundUp");
+	}
+	
+	public void soudnDown() {
+		System.out.println("Speaker soundDown");
+	}
+}

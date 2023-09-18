@@ -1,0 +1,8 @@
+package sub1;
+
+public class IocMain {
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package sub2;
+
+import org.springframework.stereotype.Component;
+
+@Component("com")
+public class Computer {
+
+	private CPU cpu;
+	private RAM ram;
+	private HDD hdd;
+	
+	// DI - Constructor Inject (생성자 인젝션)
+	
+	public void show() {
+		cpu.show();
+		ram.show();
+		hdd.show();
+	}
+	
+}

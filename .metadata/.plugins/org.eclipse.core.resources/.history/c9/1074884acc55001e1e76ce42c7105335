@@ -1,0 +1,19 @@
+package sub1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+/*
+ * 날짜: 2023/09/18
+ * 이름: 조유빈
+ * 내용: Spring Ioc 실습하기
+ */
+
+public class IocMain {
+	public static void main(String[] args) {
+		
+		// 스프링 컨테이너 객체 생성
+		ApplicationContext = new GenericXmlApplicationContext("application.xml");
+	}
+
+}
