@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:context="http://www.springframework.org/schema/context"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
@@ -12,6 +12,6 @@
 	
  	<bean id="lg" class="sub1.LgTV"></bean>
  	<bean id="samsung" class="sub1.SamsungTV"></bean>
- 	<bean id="speaker" class="sub1.Speaker"></bean>
+ 	<bean id="spk" class="sub1.Speaker"></bean>
 
 </beans>
