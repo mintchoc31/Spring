@@ -1,0 +1,14 @@
+2023-09-26T09:21:32.445+09:00  INFO 1444 --- [main] kr.ch07.controller.MainControllerTest    : Starting MainControllerTest using Java 17.0.8.1 with PID 1444 (started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-09-26T09:21:32.449+09:00  INFO 1444 --- [main] kr.ch07.controller.MainControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2023-09-26T09:21:32.988+09:00  INFO 1444 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-26T09:21:33.085+09:00  INFO 1444 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-26T09:21:33.086+09:00  INFO 1444 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-26T09:21:33.087+09:00  INFO 1444 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-26T09:21:33.105+09:00  INFO 1444 --- [main] kr.ch07.controller.MainControllerTest    : Started MainControllerTest in 0.882 seconds (process running for 1.415)
+2023-09-26T09:27:50.886+09:00  INFO 14864 --- [main] kr.ch07.controller.MainControllerTest    : Starting MainControllerTest using Java 17.0.8.1 with PID 14864 (started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-09-26T09:27:50.887+09:00  INFO 14864 --- [main] kr.ch07.controller.MainControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2023-09-26T09:27:51.434+09:00  INFO 14864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-26T09:27:51.533+09:00  INFO 14864 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-26T09:27:51.533+09:00  INFO 14864 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-26T09:27:51.534+09:00  INFO 14864 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-09-26T09:27:51.552+09:00  INFO 14864 --- [main] kr.ch07.controller.MainControllerTest    : Started MainControllerTest in 0.892 seconds (process running for 1.426)

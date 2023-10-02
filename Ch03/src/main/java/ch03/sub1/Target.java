@@ -1,7 +1,7 @@
 package ch03.sub1;
 
-public class Target {
-	
-	public void doBusiness();
+public interface Target {
 
+	public void doBusiness();
+	
 }

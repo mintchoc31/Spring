@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>user6::list</title>
+	</head>
+	<body>
+		<h3>user6 목록</h3>
+		
+		<a href="/Ch07/index">메인</a>
+		<a href="/Ch07/user6/register">등록</a>
+		
+		<table border="1">
+			<tr>
+				<th>아이디</th>
+				<th>이름</th>
+				<th>생일</th>
+				<th>성별</th>
+				<th>나이</th>
+				<th>주소</th>
+				<th>휴대폰</th>
+			</tr>
+			<tr th:each="user:${users}">
+				<td th:text="${user.uid}">아이디</td>
+				<td th:text="${user.name}">이름</td>
+				<td th:text="${user.name}">생일</td>
+				<td th:text="${user.name}">성별</td>
+				<td th:text="${user.name}">나이</td>
+				<td th:text="${user.name}">주소</td>
+				<td th:text="${user.name}">휴대폰</td>
+				<!--
+				<td>[[${user.hp}]]</td>
+				<td>[[${user.age}]]</td>
+				-->
+			</tr>
+			
+		</table>	
+		
+	</body>
+</html>
