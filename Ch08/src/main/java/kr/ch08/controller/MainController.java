@@ -120,6 +120,15 @@ public class MainController {
 	}
 	@GetMapping("/query23")
 	public String query23() {
+		
+		List<Object[]> result = repo.selectUser1ByUid("a102");
+		
+		for(Object[] obj : result) {
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			
+		}
 		return "redirect:/";
 	}
 	
