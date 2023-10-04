@@ -24,6 +24,7 @@ public class User1DTO {
 	private String hp;
 	private int age;
 
+	// Entity 변환 메서드
 	public User1Entity toEntity() {
 		
 		return User1Entity.builder()

@@ -22,7 +22,7 @@ public class MainController {
 	@GetMapping("/query1")
 	public String query1() {
 		
-		User1Entity entity = repo.findUser1EntityByUid(String uid);
+		User1Entity entity = repo.findUser1EntityByUid("J101");
 		System.out.println(entity);
 		
 		return "redirect:/";
@@ -32,9 +32,9 @@ public class MainController {
 		
 		List<User1Entity> list = repo.findUser1EntityByName("홍길동");
 		System.out.println(list);
-		
 		return "redirect:/";
 	}
+	
 	@GetMapping("/query3")
 	public String query3() {
 		return "redirect:/";
@@ -124,9 +124,9 @@ public class MainController {
 		List<Object[]> result = repo.selectUser1ByUid("a102");
 		
 		for(Object[] obj : result) {
-			System.out.println();
-			System.out.println();
-			System.out.println();
+			System.out.println("obj[0] : " + obj[0]);
+			System.out.println("obj[1] : " + obj[1]);
+			System.out.println("obj[2] : " + obj[2]);
 			
 		}
 		return "redirect:/";
