@@ -29431,3 +29431,12 @@ Caused by: java.lang.RuntimeException: Driver oracle.jdbc.OracleDriver claims to
 2023-10-06T12:24:04.052+09:00  INFO 11900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2023-10-06T12:24:04.069+09:00  INFO 11900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch10'
 2023-10-06T12:24:04.073+09:00  INFO 11900 --- [restartedMain] kr.ch10.Ch10Application                  : Started Ch10Application in 2.24 seconds (process running for 2.57)
+2023-10-06T12:24:31.924+09:00  INFO 11900 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/Ch10]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06T12:24:31.925+09:00  INFO 11900 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-06T12:24:31.926+09:00  INFO 11900 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-06T12:50:30.339+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-06T12:50:30.345+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06T12:50:30.346+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/Ch10]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-06T12:50:30.349+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T12:50:30.351+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T12:50:30.359+09:00  INFO 11900 --- [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
