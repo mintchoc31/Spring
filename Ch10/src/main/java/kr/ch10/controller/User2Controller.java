@@ -23,7 +23,7 @@ public class User2Controller {
 	public List<User2DTO> list() {
 		return service.selectUser2s();
 	}
-	
+
 	@GetMapping("/user2/{id}")
 	public User2DTO user2(@PathVariable("id") String id) {
 		return service.selectUser2(id);

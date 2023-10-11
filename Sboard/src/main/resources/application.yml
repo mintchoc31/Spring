@@ -1,0 +1,48 @@
+jwt:
+    issuer: mintchoc31@gmail.com
+    secret: 'dGXOYkzoPJKJa0MzUfwsnyTtD3RS39MR '
+logging:
+    file:
+        name: log/Ch11.log
+    level:
+        jdbc:
+            connection: info
+            resultsettable: info
+            sqlonly: info
+            sqltiming: info
+        org:
+            hibernate: info
+            springframework:
+                security: debug
+        root: info
+server:
+    servlet:
+        context-path: /
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: Mint0531*
+        url: jdbc:mysql://3.34.178.254/Jboard
+        username: userdb
+    devtools:
+        livereload:
+            enabled: 'true '
+    jpa:
+        database: mysql
+        hibernate:
+            ddl-auto: update
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+                use_sql_comments: true
+    security:
+        user:
+            name: user
+            password: 1234
+    thymeleaf:
+        cache: false
+        # prefix 설정을 안하면 HTML 수정 후 브라우저에서 새로고침 반영안됨
+        prefix: file:src/main/resources/templates/
