@@ -7,6 +7,7 @@ import kr.co.sboard.entity.UserEntity;
 import kr.co.sboard.repository.TermsRepository;
 import kr.co.sboard.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.parameters.P;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,7 @@ public class UserService {
     }
 
     public void save(UserDTO dto){
-
+        
         // 비밀번호 암호화
         dto.setPass1(passwordEncoder.encode(dto.getPass1()));
 

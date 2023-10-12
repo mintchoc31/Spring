@@ -1,17 +1,20 @@
 package kr.co.sboard.security;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import kr.co.sboard.entity.UserEntity;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
@@ -19,17 +22,17 @@ import java.util.List;
 @ToString
 public class MyUserDetails implements UserDetails {
 	private static final long serialVersionUID = -5532680704133363159L;
-
+	
 	private UserEntity user;
-
+	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// 계정이 갖는 권한 목록
 		List<GrantedAuthority> authorities = new ArrayList<>();
-
-		// 반드시 접두어로 ROLE_ 입력해야 됨 그래야 hasRole(), hasAnyRole() 메서드가 처리됨
+		
+		// 반드시 접두어로 ROLE_ 입력해야 됨 그래야 hasRole(), hasAnyRole() 메서드가 처리됨 
 		// 만약 ROLE_ 접두어를 안쓰면 hasAuthority(), hasAnyAuthority() 메서드로 해야됨
-		authorities.add(new SimpleGrantedAuthority("ROLE_"+user.getRole()));
+		authorities.add(new SimpleGrantedAuthority("ROLE_"+user.getRole())); 
 		return authorities;
 	}
 
